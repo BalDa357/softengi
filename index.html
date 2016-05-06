@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Math Test</title>
+    <meta name="author" content="Daniel Bala" />
+    <link rel="stylesheet" href="css/main.css" />
+    <script src="main.js"></script>
+</head>
+<body>
+    <div id="header">
+    </div>
+    <div id="setting">
+        <H2> Тестирования знаний математики </H2>
+        <div id="userSet">
+        <p>
+            <div class="checks">
+            <input id="add" type="checkbox" />
+            <label for="add"><b>Сложение</b></label>
+            <input id="sub" type="checkbox"/>
+            <label for="sub"><b>Вычитание</b></label>
+            <input id="mul" type="checkbox" />
+            <label for="mul"><b>Умножение</b></label>
+            <input id="div" type="checkbox" />
+            <label for="div"><b>Деление</b></label>
+            </div>
+            <div id="name">
+                <label for="inpName">Имя: </label>
+                <input id="inpName" type="text" autofocus/>
+            </div>
+            <p class="buttonT" onclick="startTestBtn()"><b>Начать тестирование</b></p>
+        </p>
+        </div>
+    </div>
+
+    <div id="testing">
+        <div id="points"></div>
+        <div id="exercise">
+        </div>
+        <label for="answer">Ответ: </label>
+        <input id="answer" type="number" autofocus/>
+        <p class="buttonT" onclick="answerEx()">Ответить</p>
+    </div>
+
+    <div id="results">
+        <h2>Результат тестирования</h2>
+        <div id="resultPoints"></div>
+        <p class="buttonT" onclick="testAgain()"><b>Пройти еще раз</b></p>
+        <p class="buttonT"><b>Смотреть таблицу результатов</b></p>
+    </div>
+
+</body>
+</html>
